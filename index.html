@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All4Paw - Home</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      section {
+        margin: 20px;
+        padding: 10px;
+        border: 1px solid#ddd;
+        border-radius: 5px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 style="color: #4caf50; text-align: center">Welcome to All4Paw</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li>
+            <a href="#">Learn More ▼</a>
+            <ul>
+              <li><a href="#volunteer">Volunteer</a></li>
+              <li><a href="#donate">Donate</a></li>
+              <li><a href="#events">Events</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Adopt Your Forever Friend</h2>
+        <p>We are deicated to helping dogs find their forever homes.</p>
+        <video controls width="600">
+          <source src="gits/footprints.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+      <section class="filter-section">
+        <h2>Find Dogs by Category</h2>
+        <button class="filter-button" data-category="puppy">Puppy</button>
+        <button class="filter-button" data-category="adult">Adult</button>
+        <button class="filter-button" data-category="senior">Senior</button>
+        <button class="filter-button" data-category="all">Show All</button>
+      </section>
+      <!-- <section >
+        <h2 style="text-align:center;font-size:2rm;margin:10px 0;">Featured Dogs</h2>
+        <img src="images/hnoody.jpg" alt="Dog 1" />
+        <img src="images/pexels.jpg" alt="Dog 2" />
+        <img src="images/photo.jpg" alt="Dog 3" />
+      </section> -->
+      <section class="featured-dogs">
+        <h2 style="text-align: center; font-size: 2rem; margin: 10px 0">
+          Featured Dogs
+        </h2>
+        console.log(document.body.innerHTML);
+
+        <div class="dog-gallery">
+            <div class="dog-card">
+                <img src="images/photo.jpg" alt="Buddy (Golden Retriever)" />
+                <p>Buddy (Golden Retriever), Age: 0.8</p>
+              </div>
+              <div class="dog-card">
+                <img src="images/pexel.jpg" alt="Bella (Labrador)" />
+                <p>Bella (Labrador), Age: 4</p>
+              </div>
+              <div class="dog-card">
+                <img src="images/hnoody.jpg" alt="Charlie (Corgi)" />
+                <p>Charlie (Corgi), Age: 1</p>
+              </div>
+              <div class="dog-card">
+                <img src="images/pexels.jpg" alt="Max (German Shepherd)" />
+                <p>Max (German Shepherd), Age: 8</p>
+              </div>
+        </div>
+
+      </section>
+
+      <section>
+        <h2>Subscribe to Our Newsletter</h2>
+        <form id="subscribe-form">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy;2024 All4Paw. All Rights Reserved.</p>
+    </footer>
+    <script src="home.js" defer></script>
+  </body>
+</html>
